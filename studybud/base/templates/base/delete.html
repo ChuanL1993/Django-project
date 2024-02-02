@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div>
+    <form method="POST", action="">
+        {% csrf_token %}
+        <p>Are you sure to delete this {{obj}}</p>
+        <a href="{{request.META.HTTP_REFERER}}">Cancel</a>
+        <input type="submit" value="Comfirm">
+
+    </form>
+</div>
+
+<!-- <style>
+    .cancel-button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #ccc;
+        color: #333;
+        border-radius: 5px;
+    }
+</style> -->
+{% endblock content %}
