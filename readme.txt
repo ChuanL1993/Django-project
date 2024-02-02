@@ -1,1 +1,1 @@
-This is a practice of Django project
+This is a practice of Django project！
